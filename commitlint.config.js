@@ -30,6 +30,7 @@ module.exports = {
       2,
       'always',
       [
+        'rfc',
         'build',
         'chore',
         'ci',

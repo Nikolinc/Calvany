@@ -5,9 +5,13 @@
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:react/recommended",
-    "next/core-web-vitals"
+    "next/core-web-vitals",
+    "plugin:storybook/recommended"
   ],
-  "plugins": ["react", "@typescript-eslint"],
+  "plugins": [
+    "react",
+    "@typescript-eslint"
+  ],
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
@@ -30,10 +34,22 @@
       }
     ],
     "no-var": "error",
-    "semi": ["error", "never"],
-    "quotes": ["error", "single"],
-    "eol-last": ["error", "always"],
-    "arrow-body-style": ["warn", "as-needed"],
+    "semi": [
+      "error",
+      "never"
+    ],
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "eol-last": [
+      "error",
+      "always"
+    ],
+    "arrow-body-style": [
+      "warn",
+      "as-needed"
+    ],
     "indent": [
       "warn",
       2,
@@ -41,18 +57,26 @@
         "SwitchCase": 1
       }
     ],
-    "jsx-quotes": ["warn", "prefer-single"],
+    "jsx-quotes": [
+      "warn",
+      "prefer-single"
+    ],
     "no-extra-semi": "off",
     "no-case-declarations": "off",
     "no-async-promise-executor": "off",
-    "no-restricted-imports": ["off"],
+    "no-restricted-imports": [
+      "off"
+    ],
     "import/no-unresolved": "off",
     "react/jsx-uses-vars": "error",
     "react/no-unescaped-entities": "off",
     "react/jsx-filename-extension": [
       2,
       {
-        "extensions": [".jsx", ".tsx"]
+        "extensions": [
+          ".jsx",
+          ".tsx"
+        ]
       }
     ],
     "react/prop-types": "off",
@@ -60,7 +84,10 @@
     "no-console": [
       "error",
       {
-        "allow": ["warn", "error"]
+        "allow": [
+          "warn",
+          "error"
+        ]
       }
     ],
     "react/react-in-jsx-scope": "off",
