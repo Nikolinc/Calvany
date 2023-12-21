@@ -1,0 +1,16 @@
+.header {
+  position: fixed;
+  width: calc(100vw - 6%);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 5% 1%;
+  border-bottom: 1px solid;
+}
+
+.NameLogo {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 400;
+}
