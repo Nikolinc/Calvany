@@ -11,7 +11,9 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
+    "i18next": "^23.7.11",
     "next": "14.0.4",
+    "next-auth": "^4.24.5",
     "next-i18next": "^15.1.1",
     "prisma": "^5.7.0",
     "react": "^18",
@@ -28,6 +30,7 @@
     "@storybook/nextjs": "7.6.5",
     "@storybook/react": "7.6.5",
     "@storybook/test": "7.6.5",
+    "@svgr/webpack": "^8.1.0",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
