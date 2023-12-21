@@ -1,0 +1,28 @@
+:root {
+  --primery-color-text: var(--eerie-black);
+  --secondary-color-text: var(--independence);
+
+  --prymery-background-color: var(--while);
+  --secondary-background-color: var(--ghost-white);
+
+  --prymeri-border-color: (--black);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  color: var(--primery-color-text);
+  background: var(--prymery-background-color);
+}
+
+* {
+  font-family: Inria Serif;
+  font-weight: 400;
+}
+
+svg {
+  width: 20px;
+  height: 20px;
+  stroke: black;
+  stroke-width: 2;
+}
