@@ -1,0 +1,10 @@
+.button {
+  cursor: pointer;
+}
+
+/* Type buttons */
+
+.buttonVoid {
+  background: none;
+  border: none;
+}
