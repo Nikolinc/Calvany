@@ -2,8 +2,8 @@
   "name": "App",
   "icons": [
     {
-      "src": "\/logo.png",
-      "type": "image\/png",
+      "src": "\/logo.svg",
+      "type": "image\/svg",
       "density": "0.75"
     }
   ]
