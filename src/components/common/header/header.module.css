@@ -1,5 +1,5 @@
 .header {
-  position: fixed;
+  /* position: fixed; */
   width: calc(100vw - 6%);
 
   display: flex;
@@ -9,8 +9,21 @@
   border-bottom: 1px solid;
 }
 
+.logoIcon {
+  width: 60px;
+  stroke-width: 0.2;
+}
+
 .NameLogo {
   text-align: center;
   font-size: 48px;
   font-weight: 400;
+}
+
+.logoName {
+  text-align: center;
+  font-family: Judson;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
