@@ -4,6 +4,14 @@ const { i18n } = require('./next-i18next.config')
 
 const nextConfig = {
   i18n,
+  async rewrites() {
+    return [
+      {
+        source: '/pages/home',
+        destination: '/',
+      },
+    ]
+  },
   webpack(config) {
     const fileLoaderRule = config.module.rules.find((rule) =>
       rule.test?.test?.('.svg'),
