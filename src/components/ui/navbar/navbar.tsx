@@ -10,14 +10,14 @@ function Navbar() {
   return (
     <nav className={Style.nav}>
       <Search />
-      <Link href={'/'}>
-        <PersonIcon />
+      <Link href={'/personal'}>
+        <PersonIcon className={Style.person} />
       </Link>
-      <Link href={'/'}>
-        <FavoritIcon />
+      <Link href={'/favorite'}>
+        <FavoritIcon className={Style.favorite} />
       </Link>
-      <Link href={'/'}>
-        <ShopingBasketIcon />
+      <Link href={'/shopping_basket'}>
+        <ShopingBasketIcon className={Style.shoppingBasket} />
       </Link>
     </nav>
   )
