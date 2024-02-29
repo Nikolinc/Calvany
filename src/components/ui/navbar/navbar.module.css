@@ -2,3 +2,18 @@
   display: flex;
   gap: 0.5rem;
 }
+.favorite,
+.person,
+.shoppingBasket {
+  stroke-width: 20;
+  fill: none;
+}
+a:hover .favorite > * {
+  stroke: none;
+  fill: #b7121f;
+}
+a:hover .person > *,
+a:hover .shoppingBasket > * {
+  stroke: none;
+  fill: black;
+}
