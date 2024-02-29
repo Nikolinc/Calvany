@@ -1,21 +1,16 @@
 "use client"
+import {useParams} from "@/hooks/useParams";
 import SearchIcon from "@/shared/assets/icon/search.svg";
-import { useRouter } from "next/navigation";
 import { useState } from "react";
 import Style from './search.module.css';
 
 function Search() {
   const [searchQuery, setSearchQuery] = useState('');
-  const router = useRouter();
-
-  const onSearch = (event: React.FormEvent) => {
-    event.preventDefault();
-    // const encodedSearchQuery = encodeURI(searchQuery);
-    // router.push(encodedSearchQuery)
-  }
+  const params = useParams();
 
   return (
-    <form className={Style.searchBox} onChange={onSearch} >
+    <div className={Style.searchBox}
+      onChange={() => params.set('search', searchQuery)} >
       <button className={Style.btnSearch}>
         <i className={Style.fas}>
           <SearchIcon />
@@ -28,7 +23,7 @@ function Search() {
         className={Style.inputSearch}
         placeholder="Type to Search..."
       />
-    </form>
+    </div>
   )
 }
 
