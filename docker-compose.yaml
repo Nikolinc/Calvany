@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  web:
+    image: node:14
+    container_name: calvani_furniture
+    env_file:
+      - .env
+    environment:
+      API_TOKEN: ${API_TOKEN}
+      API_URL: ${API_URL}
+    ports:
+      - '${PORT}:${PORT}'
+    command: yarn && yarn build && yarn start
+
+  database:
+    image: postgres:latest
+    restart: always
+    container_name: calvani
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    ports:
+      - '${POSTGRES_PORT}:${POSTGRES_PORT}'
