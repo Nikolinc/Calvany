@@ -6,12 +6,19 @@
   --secondary-background-color: var(--ghost-white);
 
   --prymeri-border-color: (--black);
+
+  --prymeri-news-color: var(--macaroni-and-cheese);
+  --secondary-news-color: var(--indigo);
 }
 
 * {
   margin: 0;
   padding: 0;
   color: var(--primery-color-text);
+}
+
+body,
+main {
   background: var(--prymery-background-color);
 }
 
