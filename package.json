@@ -11,6 +11,7 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
+    "@vercel/postgres": "^0.7.2",
     "i18next": "^23.7.11",
     "next": "14.0.4",
     "next-auth": "^4.24.5",
@@ -38,7 +39,6 @@
     "eslint": "^8",
     "eslint-config-next": "14.0.4",
     "eslint-plugin-storybook": "^0.6.15",
-    "storybook": "7.6.5",
     "typescript": "^5"
   }
 }
