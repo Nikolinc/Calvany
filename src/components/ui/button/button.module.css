@@ -8,3 +8,18 @@
   background: none;
   border: none;
 }
+
+.buttonTypeOne {
+  padding: 0.6rem 2rem;
+  border: 1px solid #273b5e;
+  border-radius: 10px;
+  background-color: #af855b;
+  color: white !important;
+}
+
+.buttonTypeOne:hover {
+  border: 1px solid #af855b;
+  border-radius: 10px;
+  background-color: #273b5e;
+  color: white;
+}
