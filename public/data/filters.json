@@ -1,0 +1,32 @@
+{
+  "filters": [
+    {
+      "name": "Bedroom",
+      "linc": "/bedroom"
+    },
+    {
+      "name": "Living room",
+      "linc": "/living-room"
+    },
+    {
+      "name": "Kitchen",
+      "linc": "/kitchen"
+    },
+    {
+      "name": "Workspace",
+      "linc": "/workspace"
+    },
+    {
+      "name": "Bathroom",
+      "linc": "/bathroom"
+    },
+    {
+      "name": "Dining",
+      "linc": "/dining"
+    },
+    {
+      "name": "Laundry",
+      "linc": "/laundry"
+    }
+  ]
+}
