@@ -1,0 +1,34 @@
+.headerTable {
+  margin: 2rem 0px;
+  width: 95%;
+  display: flex;
+  gap: 0.8rem;
+  justify-content: start;
+  align-items: center;
+}
+
+.plusIcon {
+  stroke-width: 10;
+}
+
+.searchHeaderTable {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--prymeri-border-color);
+  padding: 0.2rem 0.9rem;
+  border-radius: 5px;
+  margin-left: auto;
+}
+
+.inputHeaderTable {
+  border: none;
+  width: 20rem;
+}
+
+.inputHeaderTable:focus {
+  outline: none;
+}
+
+.inputHeaderTable::placeholder {
+  color: var(--primery-color-text);
+}
