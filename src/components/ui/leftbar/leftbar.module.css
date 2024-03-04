@@ -1,0 +1,13 @@
+.LeftBar {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid var(--prymeri-border-color);
+  padding: 1rem 3rem;
+}
+
+.references {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+  gap: 0.5rem;
+}
