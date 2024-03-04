@@ -1,0 +1,8 @@
+.tableAdmin {
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  margin: 4rem auto;
+}
