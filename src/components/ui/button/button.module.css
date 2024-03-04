@@ -1,5 +1,7 @@
 .button {
   cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 
 /* Type buttons */
@@ -8,7 +10,6 @@
   background: none;
   border: none;
 }
-
 .buttonTypeOne {
   padding: 0.6rem 2rem;
   border: 1px solid #273b5e;
@@ -16,10 +17,16 @@
   background-color: #af855b;
   color: white !important;
 }
-
 .buttonTypeOne:hover {
   border: 1px solid #af855b;
   border-radius: 10px;
   background-color: #273b5e;
   color: white;
+}
+.buttonTypeHeader {
+  border: 1px solid var(--prymeri-border-color);
+  padding: 0.2rem 0.9rem;
+
+  background-color: var(--prymery-background-color);
+  border-radius: 5px;
 }
