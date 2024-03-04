@@ -1,5 +1,4 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
+// schema.prisma
 
 generator client {
   provider = "prisma-client-js"
@@ -11,16 +10,61 @@ datasource db {
   directUrl = env("POSTGRES_URL_NON_POOLING") // uses a direct connection
 }
 
-model User {
-  id Int @id @default(autoincrement())
-  createAt DateTime @default(now())
-  email String @unique
-  name String
-  role Role @default(USER)
-
-}
-
-enum Role{
+enum role {
   USER
   ADMIN
+}
+
+model users {
+  id        Int       @id @default(autoincrement())
+  createdAt DateTime  @default(now()) @map(name: "created_at")
+  updatedAt DateTime  @updatedAt @map(name: "updated_at")
+  email     String    @unique
+  firstname String?
+  lastname  String?
+  fullname  String?   
+  role      role      @default(USER)
+}
+
+model measurements {
+  id        String     @id @default(cuid())
+  createdAt DateTime   @default(now()) @map(name: "created_at")
+  updatedAt DateTime   @updatedAt @map(name: "updated_at")
+  width     String
+  depth     String
+  height    String  
+  product   products[]  // Обратное отношение // Обратное отношение
+}
+model details {
+  id        String     @id @default(cuid())
+  createdAt DateTime   @default(now()) @map(name: "created_at")
+  updatedAt DateTime   @updatedAt @map(name: "updated_at")
+  name      String
+  value     String
+  product   products[]  // Обратное отношение
+}
+model products {
+  id           Int        @id @default(autoincrement())
+  createdAt    DateTime   @default(now())
+  updatedAt    DateTime   @updatedAt
+  name         String
+  description  String
+  color        String[]
+  rating       Int[]
+  published    Boolean    @default(false)
+  categories   categorys[]
+  details      details[]
+  measurements measurements[]
+}
+model news {
+  id            String       @default(cuid()) @id
+  title         String?
+  content       String?   @unique
+  createdAt     DateTime  @default(now()) @map(name: "created_at")
+  updatedAt     DateTime  @updatedAt @map(name: "updated_at")
+}
+model categorys {
+  id    Int    @id @default(autoincrement())
+  name  String
+  posts products[]
 }
