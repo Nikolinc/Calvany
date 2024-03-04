@@ -1,0 +1,17 @@
+.headerAdminPage {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+  margin-left: 2rem;
+  gap: 1rem;
+  width: 95%;
+  margin-bottom: 4rem;
+  padding-bottom: 1rem;
+  border-bottom: 0.5px solid var(--secondary-border-color);
+}
+
+.buttonSectionHAP {
+  margin-left: auto;
+  display: flex;
+  gap: 1rem;
+}
