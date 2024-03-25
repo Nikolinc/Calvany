@@ -10,13 +10,13 @@ function Navbar() {
   return (
     <nav className={Style.nav}>
       <Search />
-      <Link href={'/personal'}>
+      <Link href={'/ru/personal'}>
         <PersonIcon className={Style.person} />
       </Link>
-      <Link href={'/favorite'}>
+      <Link href={'/ru/favorite'}>
         <FavoritIcon className={Style.favorite} />
       </Link>
-      <Link href={'/shopping_basket'}>
+      <Link href={'/ru/shopping_basket'}>
         <ShopingBasketIcon className={Style.shoppingBasket} />
       </Link>
     </nav>
