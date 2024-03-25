@@ -1,0 +1,34 @@
+.blocTabs {
+  display: flex;
+}
+
+.contentTabs {
+  border: 1px solid var(--secondary-border-color);
+  padding: 1rem;
+  background: var(--secondary-background-color);
+}
+.cantainerCreateForm {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+}
+
+.activeContent::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100%-2px);
+  height: 5px;
+  background: rgb(88, 147, 241);
+}
+.content {
+  font-size: large;
+  width: 100%;
+  display: none;
+}
+.activeContent {
+  display: block;
+}
