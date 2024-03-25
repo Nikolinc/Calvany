@@ -1,0 +1,32 @@
+.inputForm {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.3rem 1rem;
+  border: 1px solid var(--secondary-border-color);
+}
+.Input {
+  width: 100%;
+  font-size: large;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.InputCheckBox {
+  accent-color: var(--prymeri-border-color);
+}
+
+.labelCheckBox {
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  font-size: larger;
+  color: var(--secondary-color-text);
+}
+
+.InputCheckBox:checked ~ .labelCheckBox {
+  color: var(--primery-color-text);
+}
