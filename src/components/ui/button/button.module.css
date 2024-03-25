@@ -30,3 +30,14 @@
   background-color: var(--prymery-background-color);
   border-radius: 5px;
 }
+
+.buttonTypeTabs {
+  font-size: large;
+  color: var(--primery-color-text);
+  background: var(--secondary-background-color);
+  border: 1px solid var(--secondary-border-color);
+  padding: 0.3rem 1rem;
+}
+.buttonTypeTabs:focus {
+  background: var(--prymery-background-color);
+}
