@@ -1,0 +1,15 @@
+.tableAdmin {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 5rem;
+  margin: 4rem auto;
+}
+
+.ContentPage {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
