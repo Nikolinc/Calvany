@@ -15,6 +15,7 @@
   display: flex;
   align-items: center;
   border: 1px solid var(--prymeri-border-color);
+  background: var(--prymery-background-color);
   padding: 0.2rem 0.9rem;
   border-radius: 5px;
   margin-left: auto;
