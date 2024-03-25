@@ -1,17 +1,10 @@
 /** @type {import('next').NextConfig} */
 
-const { i18n } = require('./next-i18next.config')
+
+const createNextIntlPlugin = require('next-intl/plugin',);
+const withNextIntl = createNextIntlPlugin();
 
 const nextConfig = {
-  i18n,
-  async rewrites() {
-    return [
-      {
-        source: '/pages/home',
-        destination: '/',
-      },
-    ]
-  },
   webpack(config) {
     const fileLoaderRule = config.module.rules.find((rule) =>
       rule.test?.test?.('.svg'),
@@ -36,4 +29,4 @@ const nextConfig = {
   },
 }
 
-module.exports = nextConfig
+module.exports = withNextIntl(nextConfig);

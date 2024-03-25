@@ -12,15 +12,16 @@
   },
   "dependencies": {
     "@prisma/client": "^5.10.2",
-    "@vercel/blob": "^0.22.1",
     "@vercel/postgres": "^0.7.2",
-    "i18next": "^23.7.11",
     "next": "14.0.4",
     "next-auth": "^4.24.5",
     "next-i18next": "^15.1.1",
+    "next-intl": "^3.9.4",
     "prisma": "^5.7.0",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-hook-form": "^7.51.0",
+    "uuid": "^9.0.1"
   },
   "devDependencies": {
     "@svgr/webpack": "^8.1.0",
@@ -31,6 +32,8 @@
     "eslint": "^8",
     "eslint-config-next": "14.0.4",
     "eslint-plugin-storybook": "^0.6.15",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7",
     "typescript": "^5"
   }
 }
