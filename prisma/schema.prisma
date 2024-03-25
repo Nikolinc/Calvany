@@ -24,10 +24,11 @@ model users {
   lastname  String?
   fullname  String?   
   role      role      @default(USER)
+  rating    rating[]
 }
 
 model measurements {
-  id        String     @id @default(cuid())
+  id        Int        @id @default(autoincrement())
   createdAt DateTime   @default(now()) @map(name: "created_at")
   updatedAt DateTime   @updatedAt @map(name: "updated_at")
   width     String
@@ -36,35 +37,58 @@ model measurements {
   product   products[]  // Обратное отношение // Обратное отношение
 }
 model details {
-  id        String     @id @default(cuid())
+  id        Int        @id @default(autoincrement())
   createdAt DateTime   @default(now()) @map(name: "created_at")
   updatedAt DateTime   @updatedAt @map(name: "updated_at")
   name      String
   value     String
   product   products[]  // Обратное отношение
 }
+
+model colors{
+  id           Int        @id @default(autoincrement())
+  createdAt    DateTime   @default(now()) @map(name: "created_at")
+  updatedAt    DateTime   @updatedAt @map(name: "updated_at")
+  name         String
+  value        String
+  products     products[]
+}
+
+model rating{
+  id           Int        @id @default(autoincrement())
+  createdAt    DateTime   @default(now()) @map(name: "created_at")
+  updatedAt    DateTime   @updatedAt @map(name: "updated_at")
+  count        Int
+  users        users[]
+  products     products[]
+}
+
 model products {
   id           Int        @id @default(autoincrement())
-  createdAt    DateTime   @default(now())
-  updatedAt    DateTime   @updatedAt
+  createdAt    DateTime   @default(now()) @map(name: "created_at")
+  updatedAt    DateTime   @updatedAt @map(name: "updated_at")
+  article      String
   name         String
-  description  String
-  color        String[]
-  rating       Int[]
+  description  String  
   published    Boolean    @default(false)
+  colors       colors[]
   categories   categorys[]
   details      details[]
+  
+  rating    rating[]
   measurements measurements[]
 }
 model news {
-  id            String       @default(cuid()) @id
+  id            Int        @id @default(autoincrement())
   title         String?
   content       String?   @unique
   createdAt     DateTime  @default(now()) @map(name: "created_at")
   updatedAt     DateTime  @updatedAt @map(name: "updated_at")
 }
 model categorys {
-  id    Int    @id @default(autoincrement())
+  id    Int    @id @default(autoincrement())  
+  createdAt     DateTime  @default(now()) @map(name: "created_at")
+  updatedAt     DateTime  @updatedAt @map(name: "updated_at")
   name  String
   posts products[]
 }
