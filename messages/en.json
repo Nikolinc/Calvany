@@ -1,0 +1,23 @@
+{
+  "Admin": {
+    "Bar": {
+      "table": "Table",
+      "tables": "Tables"
+    },
+    "Tables": {
+      "users": "Users",
+      "news": "News",
+      "measurements": "Measurements",
+      "products": "Products",
+      "details": "Details",
+      "categorys": "Сategories",
+
+      "users_one": "User",
+      "news_one": "News",
+      "measurements_one": "Measurements",
+      "products_one": "Product",
+      "details_one": "Details",
+      "categorys_one": "Сategory"
+    }
+  }
+}

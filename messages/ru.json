@@ -1,0 +1,54 @@
+{
+  "Admin": {
+    "General": {
+      "save": "Сохранить",
+      "cancel": "Отмена"
+    },
+    "Bar": {
+      "table": "Таблица",
+      "tables": "Таблицы",
+      "create": "Создать",
+      "edit": "Изменить"
+    },
+    "Tables": {
+      "users": "Пользователи",
+      "news": "Новости",
+      "measurements": "Измерения",
+      "colors": "Цвета",
+      "rating": "Рейтинг",
+      "products": "Товары",
+      "details": "Детали",
+      "categorys": "Категории",
+      "colors_one": "Цвет",
+      "rating_one": "Оценку",
+      "users_one": "Пользователя",
+      "news_one": "Новости",
+      "measurements_one": "Измерения",
+      "products_one": "Товар",
+      "details_one": "Детали",
+      "categorys_one": "Категорию"
+    },
+    "Input": {
+      "id": "Индификатор",
+      "created_at": "Дата создания",
+      "updated_at": "Дата обновления",
+      "role": "Роль пользователя",
+      "firstname": "Имя",
+      "lastname": "Фамилия",
+      "fullname": "ФИО",
+      "email": "Электроная почта",
+      "titel": "Наименование",
+      "content": "Значение",
+      "article": "Артикул",
+      "width": "Ширина",
+      "depth": "Длина",
+      "height": "Высота",
+      "rating": "Рейтинг",
+      "published": "Опубликован",
+      "color": "Цвета",
+      "name": "Наименование",
+      "description": "Описание",
+      "value": "Значение"
+    }
+  }
+}
