@@ -1,0 +1,48 @@
+.UploadFile {
+  border: 2px dashed var(--secondary-border-color);
+  width: 300px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Drag {
+  border: 2px dashed var(--prymeri-border-color);
+}
+
+.InputUploadFile {
+  display: none;
+}
+
+.ImageUploadFile {
+  max-width: 295px;
+  max-height: 395px;
+}
+.UploadContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  text-align: center;
+}
+
+.UploadContent h3 {
+  color: var(--secondary-color-text);
+}
+
+.UploadIcon {
+  width: 100px;
+  height: 100px;
+  fill: var(--secondary-border-color);
+}
+
+.DragIcon {
+  fill: var(--prymeri-border-color);
+}
+
+.DragText h3 {
+  color: var(--primery-color-text);
+}
